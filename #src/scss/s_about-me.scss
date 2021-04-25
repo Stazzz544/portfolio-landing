@@ -1,0 +1,107 @@
+.about-me {
+	padding: 120px 0 0 0;
+
+		&__grid-container {
+			display: grid;
+			grid-template-columns: 400px 570px;
+			// grid-template-rows: 240px 360px;
+			grid-template-rows: minmax(243px, auto) minmax(300px, auto);
+			grid-auto-rows: minmax(240px, auto);
+			column-gap: 70px;
+			row-gap: 40px;
+			align-content: start;
+			grid-template-areas: 
+			'photo theme'
+			'photo item'
+			;
+		}
+
+		&__grid-element {
+			&-img{
+				grid-area: photo;
+				img{
+					width: 100%;
+				}
+			}
+			&-theme{
+				grid-area: theme;
+				align-self: start;
+			}
+			&-skills{
+				grid-area: item;
+			}
+		}
+
+		&__subtitle {
+			padding-left: 12px;
+			margin-top: 5px;
+			position: relative;
+			@include before_circle;
+			&::before{
+				top:  -4px;
+				left: 0px;
+			}
+		}
+
+		&__title {
+		}
+
+		&__divider {
+		}
+
+		&__text {
+			line-height: 21px;
+			margin-top: 20px;
+			font-weight: 400;
+		}
+}
+.subgrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: minmax(115px, auto) minmax(115px, auto);
+	grid-auto-rows: 1fr;
+	align-content: start;
+	row-gap: 20px;
+	column-gap: 50px;
+	&__item{
+		position: relative;
+		@include before_circle;
+		padding-left: 60px;
+		&::before{
+			top: -2px;
+			left: 0px;
+		}
+		&::after{
+			content: '';
+			position: absolute;
+			top: 13px;
+			left: 14px;
+			width: 25px;
+			height: 25px;
+		}
+	}
+	&__item-1{
+		&::after{
+			background: url('../img/icons/webdevelopment.svg') center center/contain no-repeat;
+		}
+	}
+	&__item-2{
+		&::after{
+			background: url('../img/icons/Mobiledev.svg') center center/contain no-repeat;
+		}
+	}
+	&__item-3{
+		&::after{
+			background: url('../img/icons/Design.svg')  center center/contain no-repeat;
+		}
+	}
+	&__topic {
+	}
+
+	&__text {
+		margin-top: 6px;
+		font-weight: 500;
+		line-height: 18px;
+		font-size: 12px;
+	}
+}

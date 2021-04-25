@@ -1,0 +1,86 @@
+.promo {
+	position: relative;
+	min-height: 100vh;
+	position: relative;
+	padding-top: 205px;
+
+	&__subtitle {
+		margin-left: 10px;
+		position: relative;
+		@include before_circle;
+	}
+	&__title {
+		font-size: 48px;
+		line-height: 60px;
+		max-width: 530px;
+	}
+
+	&__buttons {
+		margin-top: 25px;
+		display: flex;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #000000;
+		font-weight: bold;
+		&-about{
+			margin-left: 44px;
+		}
+	}
+
+	&__link-btn {
+		padding: 12px 25px;
+		height: 45px;
+		background: $main-color;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		&:hover{
+			box-shadow: none;
+			transition: all 0.8s;
+		}
+	}
+}
+
+.sidepannel {
+	
+	position: fixed;
+	top: 375px;
+	left: -5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 338px;
+	height: 20px;
+	transform: rotate(90deg);
+	&__link {
+		transform: rotate(-90deg);
+		
+			&:hover svg path{
+				fill: $main-color;
+				-webkit-box-shadow: 11px 10px 8px 0px rgba(34, 60, 80, 0.2);
+				-moz-box-shadow: 11px 10px 8px 0px rgba(34, 60, 80, 0.2);
+				box-shadow: 11px 10px 8px 0px rgba(34, 60, 80, 0.2);
+				transition: all 0.3s;
+			
+		}
+	}
+
+	&__divider {
+		width: 70px;
+		height: 2px;
+		background: #000000;
+	}
+
+	&__text {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 24px;
+		span{
+			display: block;
+			transform: rotate(180deg);
+		}
+	}
+}
+
