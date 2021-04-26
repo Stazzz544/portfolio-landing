@@ -34,3 +34,21 @@ close.addEventListener('click', () => {
 	menu.classList.remove('menu_active');
 });
 
+// const percent = document.querySelectorAll('.skills__grid-container-bar-percent'),
+// 	lines = document.querySelector('.skills__grid-container-bar span');
+
+// percent.forEach( (item, i) => {
+// 	lines[i].style.width = item.innerHTML;
+// });
+
+
+// console.log(lines);
+// console.log(percent);
+
+
+const percent = document.querySelectorAll('.skills__grid-container-bar-percent'),
+      lines = document.querySelectorAll('.skills__grid-container-bar span');
+
+percent.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});
