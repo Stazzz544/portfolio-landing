@@ -31,7 +31,7 @@
 		padding: 65px 65px 0 65px;
 		display: grid;
 		grid-template-columns: repeat(2, 425px);
-		column-gap: 135px;
+		justify-content: space-between;
 	}
 
 	&__column {}

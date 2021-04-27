@@ -24,8 +24,8 @@
 	&__grid-container {
 		margin-top: 60px;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		// grid-template-rows: ;
+		grid-template-columns: repeat(auto-fit, 275px);
+		justify-content: center; 
 		gap: 13px;
 	}
 
@@ -61,13 +61,17 @@
 		font-size: 12px;
 		line-height: 18px;
 	}
+
+	
 //bar========================================
 	&__grid-container-bars {
 		margin-top: 120px;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		// grid-template-columns: repeat(3, 1fr);
 		column-gap: 45px;
 		row-gap: 29px;
+		grid-template-columns: repeat(auto-fit, 350px);
+		justify-content: center; 
 
 	}
 
