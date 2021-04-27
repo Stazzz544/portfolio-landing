@@ -11,6 +11,8 @@
 	&__photo {
 		img{
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 
@@ -47,12 +49,12 @@
 		margin-top: 20px;
 	}
 	&__form {
-		margin-top: 30px;
+		margin-top: 33px;
 		display: grid;
 		grid-template-rows: 45px 190px 48px;
 		grid-template-columns: repeat(2, 280px);
 		justify-content: space-between;
-		row-gap: 30px;
+		row-gap: 29.5px;
 	}
 	&__input {
 		position: relative;
@@ -109,5 +111,24 @@
 		&:hover{
 			box-shadow: none;
 		}
+	}
+	&__triggers{
+		grid-column: 1/3;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+	}
+	&__policy{
+		font-size: 12px;
+		// line-height: 14;
+		align-self: center;
+		display: flex;
+		span{
+			margin-left: 10px;
+		}
+
+	}
+	&__policy-link{
+		color: #2306D6;
+		
 	}
 }

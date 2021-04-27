@@ -4,8 +4,9 @@
 }
 
 .container{
-	max-width: 1140px;
+	max-width: 1170px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 .divider{
 	width: 60px;
@@ -55,4 +56,22 @@
 	}
 }
 
+//policy page
+.policy-page {
+	padding: 30px 0;
+	background-color:rgb(234, 235, 235);
+}
+.policy-page__wripper {
+	background-color:rgb(255, 255, 255);
+	border: 1px solid #000000;
+	border-radius: 14px;
+	padding: 15px;
+	line-height: 27px;
+}
+.policy-page__title{
+	margin-top: 10px;
+	display: block;
+	font-size: 24px;
+	text-align: center;
+}
 

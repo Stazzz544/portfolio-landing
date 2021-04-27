@@ -139,7 +139,7 @@
 		</div>
 	</section>
 
-	<section class="about-me">
+<section class="about-me">
 		<div class="container">
 			<div class="about-me__grid-container">
 				<div class="about-me__grid-element about-me__grid-element-img">
@@ -148,7 +148,7 @@
 				<div class="about-me__grid-element about-me__grid-element-theme">
 					<h3 class="about-me__subtitle subtitle">Про меня</h3>
 					<h2 class="about-me__title title">Меня зовут Александра</h2>
-					<div class="about-me__line"></div>
+					<div class="about-me__line divider"></div>
 					<div class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 						ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -176,7 +176,7 @@
 			</div>
 		</div>
 	</section>
-
+<!-- 
 	<section class="resume">
 		<div class="container">
 			<h3 class="resume__subtitle subtitle"><span>Опыт</span></h3>
@@ -523,23 +523,32 @@
 					<div class="contacts__form-title topic">Или оставьте ваши данные и я сама вам напишу:</div>
 					<form action="#" class="contacts__form">
 							<div class="contacts__input">
-								<input id='name' type="text" placeholder="Smith">
+								<input id='name' type="text" placeholder="Smith" required>
 								<label for="name">Ваше имя</label>
 							</div>
 							<div class="contacts__input">
-								<input name="email" id="email" type="email">
+								<input name="email" id="email" type="email" required>
 								<label for="email">Ваша почта</label>
 							</div>
 							<div class="contacts__textarea">
 								<textarea name="text" id="text"></textarea>
 								<label for="text">Ваше сообщение</label>
 							</div>
-						<button class="contacts__btn">Отправить сообщение</button>
+							<div class="contacts__triggers">
+								<button class="contacts__btn">Отправить сообщение</button>
+								<div class="contacts__policy">
+									<input type="checkbox" required>
+									<span>Я согласен(а) c
+										<a target="_blank" class="contacts__policy-link" href="/policy.html"> политикой конфиденциальности</a>
+									</span>
+								</div>
+							</div>
+						
 					</form>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<script src="js/script.js"></script>
