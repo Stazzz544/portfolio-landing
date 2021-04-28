@@ -46,12 +46,12 @@
 			</div>
 			<nav>
 				<ul class="menu__list">
-					<li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-					<li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-					<li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-					<li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-					<li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-					<li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+					<li class="menu__link"><a href="#promo">ПРО МЕНЯ</a></li>
+					<li class="menu__link"><a href="#about-me">МОЙ ОПЫТ</a></li>
+					<li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+					<li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+					<li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+					<li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
 				</ul>
 			</nav>
 			<div class="menu__social">
@@ -89,7 +89,7 @@
 		<div class="menu__overlay"></div>
 	</div>
 
-	<section class="promo">
+	<section class="promo" id="promo">
 		<aside class="sidepannel">
 			<a href="#" class="sidepannel__link">
 				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,11 +139,17 @@
 		</div>
 	</section>
 
-<section class="about-me">
+<section class="about-me" id="about-me">
 		<div class="container">
 			<div class="about-me__grid-container">
 				<div class="about-me__grid-element about-me__grid-element-img">
-					<img src="img/photo/Photo.jpg" alt="myPhoto">
+					<picture>
+						<source media="(max-width: 576px)" srcset="img/photo/Photos.min.jpg">
+						<source  srcset="img/photo/Photo.webp" type="image/webp">
+						<source media="(min-width: 576px)" srcset="img/photo/Photo.jpg">
+						 <img src="img/photo/Photo.jpg" alt="photo">
+					</picture>
+					
 				</div>
 				<div class="about-me__grid-element about-me__grid-element-theme">
 					<h3 class="about-me__subtitle subtitle">Про меня</h3>
@@ -177,7 +183,7 @@
 		</div>
 	</section>
 
-	<section class="resume">
+	<section class="resume" id="resume">
 		<div class="container">
 			<h3 class="resume__subtitle subtitle"><span>Опыт</span></h3>
 			<h2 class="resume__title title">Чем я буду полезна</h2>
@@ -273,7 +279,7 @@
 		</div>
 	</section>
 
-	<section class="skills">
+	<section class="skills" id="skills">
 		<div class="container">
 			<div class="skills__subtitle subtitle">Навыки</div>
 			<div class="skills__title title">Что я использую в работе</div>
@@ -410,7 +416,7 @@
 		</div>
 	</section>
 
-	<!-- <section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="portfolio__subtitle subtitle">Портфолио</div>
 			<div class="portfolio__title title">Мои работы</div>
@@ -438,9 +444,9 @@
 				</a>
 			</div>
 		</div>
-	</section> -->
+	</section>
 
-	<!-- <section class="price">
+	<section class="price" id="price">
 		<div class="container">
 			<div class="price__subtitle subtitle">Прайс-лист</div>
 			<div class="price__divider divider"></div>
@@ -475,13 +481,11 @@
 					<div class="price__item-price">Индивидуально</div>
 					<div class="price__item-discription">Создам дизайн для вашего сайта/приложения...</div>
 				</div>
-
-
 			</div>
 		</div>
-	</section> -->
+	</section>
 
-	<!-- <section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="container">
 			<div class="contacts__wrapper">
 				<div class="contacts__photo">
@@ -549,7 +553,7 @@
 				</div>
 			</div>
 		</div>
-	</section>  -->
+	</section> 
 
 
 	<script src="js/script.js"></script>

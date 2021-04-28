@@ -2,6 +2,9 @@
 	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
 }
+html{
+	scroll-behavior: smooth;
+}
 
 .container{
 	max-width: 1170px;
@@ -75,3 +78,7 @@
 	text-align: center;
 }
 
+source{
+	height: 100px;
+	width: 100px;
+}

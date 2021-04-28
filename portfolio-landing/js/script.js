@@ -25,12 +25,16 @@ testWebP(function (support) {
 const burger = document.querySelector('.burger'),
 	menu = document.querySelector('.menu'),
 	close = document.querySelector('.menu__close');
+	closeOverlay = document.querySelector('.menu__overlay');
 
 burger.addEventListener('click', () => {
 	menu.classList.toggle('menu_active');
 });
 
 close.addEventListener('click', () => {
+	menu.classList.remove('menu_active');
+});
+closeOverlay.addEventListener('click', () => {
 	menu.classList.remove('menu_active');
 });
 
